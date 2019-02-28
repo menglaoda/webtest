@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 20px;
+	color: #333;
+	font-family: "宋体","bodoni mt";
+	background: url(../img/Nview.jpg) no-repeat fixed top center;
+}
+.content{
+	width: 70%;
+	margin: 68px auto 50px;
+	background: white;
+	border-radius: 10px;
+	padding: 4% 2%;
+	box-shadow: 0px 0px 10px 6px #bbb;
+}
+.headContent{
+	position: relative;
+}
+.headTitle{
+	text-align: center;
+	color: #39a4db;
+}
+.er{
+	width: 32px;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.text{
+	text-indent: 40px;
+	margin-top: 10px;
+}
+.xuxian{
+	margin: 30px 0px 10px;
+	border: dashed 1px #ccc;
+}
+.topic{
+	margin-top: 10px;
+	border: solid 1px white;
+}
+.topic hr{
+	display: none;
+}
+.timu{
+	font-size: 22px;
+	padding: 4px;
+	font-weight: 600;
+}
+.xuanze{
+	list-style: none;
+}
+.xuanze li{
+	text-indent: 22px;
+	margin: 4px 0px ;
+}
+.bixuan{
+	color: red;
+	text-indent: 22px;
+	margin: 4px 0px;
+	display: none;
+}
+#btn{
+	width: 100px;
+	border: solid 1px #999;
+	font-weight: 600;
+	color: #39a4db;
+	text-align: center;
+	display: block;
+	padding: 4px 0px 5px;
+	margin: 20px auto 0px;
+}

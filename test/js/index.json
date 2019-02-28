@@ -1,0 +1,97 @@
+[
+	{
+		"title":"HTML 指的是？",
+		"choose":["超文本标记语言（Hyper Text Markup Language）","家庭工具标记语言（Home Tool Markup Language）","超链接和文本标记语言（Hyperlinks and Text Markup Language）"]
+	},
+	{
+		"title":"Web 标准的制定者是？",
+		"choose":["微软（Microsoft）","万维网联盟（W3C）","网景公司（Netscape）"]
+	},
+	{
+		"title":"在下列的 HTML 中，哪个是最大的标题？",
+		"choose":["<h6>","<head>","<heading>","<h1>"]
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以添加背景颜色？",
+		"choose":["<body color='yellow'>","<background>yellow</background>","<body bgcolor='yellow'>"]
+	},
+	{
+		"title":"请选择产生粗体字的 HTML 标签：",
+		"choose":["<bold>","<bb>","<b>","<bld>"]
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生超链接？",
+		"choose":["<a url='https://www.baidu.com'>百度</a>","<a href='https://www.baidu.com'>百度</a>","<a>https://www.baidu.com</a>","<a name='https://www.baidu.com'>百度</a>"],
+		"answer":"B"
+	},
+	{
+		"title":"如何在新窗口打开链接？",
+		"choose":["<a href='url' new>","<a href='url' target='_blank'>","<a href='url' target='new'>"],
+		"answer":"B"
+	},
+	{
+		"title":"以下选项中，哪个全部都是表格标签？",
+		"choose":["<table><head><tfoot>","<table><tr><td>","<table><tr><tt>","<thead><body><tr>"],
+		"answer":"B"
+	},
+	{
+		"title":"请选择可以使单元格中的内容进行左对齐的正确 HTML 标签：",
+		"choose":["<td align='left'>","<td valign='left'>","<td leftalign>","<tdleft>"],
+		"answer":"A"
+	},
+	{
+		"title":"如何产生带有数字列表符号的列表？",
+		"choose":["<ul>","<dl>","<ol>","<list>"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生复选框？",
+		"choose":["<input type='textfield'>","<textinput type='text'>","<input type='checkbox'>","<textfield>"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生下拉列表？",
+		"choose":["<list>","<input type='list'>","<input type='dropdown'>","<select>"],
+		"answer":"D"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生文本域（textarea）？",
+		"choose":["<textarea>","<input type='textarea'>","<input type='textbox'>"],
+		"answer":"A"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以插入图像？",
+		"choose":["<img href='image.gif'>","<image src='image.gif'>","<img src='image.gif'>","<img>image.gif</img>"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以插入背景图像？",
+		"choose":["<body background='background.gif'>","<background img='background.gif'>","<img src='background.gif' background>"],
+		"answer":"A"
+	},
+	{
+		"title":"CSS 指的是？",
+		"choose":["Computer Style Sheets","Cascading Style Sheets","Creative Style Sheets","Colorful Style Sheets？"],
+		"answer":"B"
+	},
+	{
+		"title":"在以下的 HTML 中，哪个是正确引用外部样式表的方法？",
+		"choose":["<style src='mystyle.css'>","<link rel='stylesheet' type='text/css' href='mystyle.css'>","<stylesheet>mystyle.css</stylesheet>"],
+		"answer":"B"
+	},
+	{
+	
+	},
+	{
+	
+	},
+	{
+	
+	},
+	{
+	
+	},
+	{
+	
+	},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+]
