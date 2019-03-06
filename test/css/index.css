@@ -7,14 +7,17 @@ body{
 	color: #333;
 	font-family: "宋体","bodoni mt";
 	background: url(../img/Nview.jpg) no-repeat fixed top center;
+	background-size: 100vw 100vh;
+	overflow: hidden;
 }
 .content{
-	width: 70%;
-	margin: 68px auto 50px;
+	width: 80%;
+	margin: 50px auto 50px;
 	background: white;
 	border-radius: 10px;
 	padding: 4% 2%;
 	box-shadow: 0px 0px 10px 6px #bbb;
+	display: none;
 }
 .headContent{
 	position: relative;
@@ -71,4 +74,62 @@ body{
 	display: block;
 	padding: 4px 0px 5px;
 	margin: 20px auto 0px;
+}
+.zhezhao{
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: #333;
+	opacity: 0.5;
+}
+.myalert{
+	width: 400px;
+	height: 200px;
+	background: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	border-radius: 10px;
+	animation: wealert 3s;
+}
+@keyframes wealert{
+	from{margin-top: -500px;}
+	to{margin-top: -200px;}
+}
+.myalert h1{
+	font-size: 30px;
+	font-weight: 500px;
+	text-align: center;
+	margin: 10px 0px;
+}
+.myalert p{
+	color: #0000FF;
+	text-indent: 16px;
+	margin-bottom: 10px;	
+}
+.myalert p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.loading{
+	display: none;
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+	text-align: center;
+}
+.loading img{
+	width: 100%;
+}
+.loading p{
+	position: relative;
+	top: -40px;
 }
