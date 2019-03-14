@@ -27,10 +27,15 @@ body{
 	color: #39a4db;
 }
 .er{
-	width: 32px;
+	width: 80px;
 	position: absolute;
 	right: 10px;
-	top: 8px;
+	top: -25px;
+}
+@media screen and (max-width: 415px){
+	.er{
+		display: none;
+	}
 }
 .text{
 	text-indent: 40px;
@@ -62,6 +67,7 @@ body{
 }
 .xuanze label,.xuanze input{
 	cursor: pointer;
+	word-break: break-all;	
 }
 .xuanze label:hover{
 	background: green;
