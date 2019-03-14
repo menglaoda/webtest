@@ -159,8 +159,8 @@ $(function(){
 			nice.html("正确答案为："+answer[erranswer[i]]).css({"color":"green","text-indent": "22px","margin":" 4px 0px"});
 			$(".topic").eq(erranswer[i]).css("border","solid 1px white");
 			$(".zhezhao").hide();
-			$(".myscore").addClass("errscore");
-			$(".myscore .errtimu").hide();
+			$(".myscore").hide();
+			$(".myscore2").show().html("您的成绩为："+score+"分").css("color","red");
 		}
 		$(".topic input").off("click");
 	})
