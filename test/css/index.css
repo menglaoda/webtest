@@ -10,6 +10,18 @@ body{
 	background-size: 100vw 100vh;
 	overflow: hidden;
 }
+
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/Nview.jpg) no-repeat fixed top center;
+  background-size: 100vw 100vh;
+}
 .content{
 	width: 80%;
 	margin: 50px auto 50px;
@@ -31,11 +43,6 @@ body{
 	position: absolute;
 	right: 10px;
 	top: -25px;
-}
-@media screen and (max-width: 415px){
-	.er{
-		display: none;
-	}
 }
 .text{
 	text-indent: 40px;
@@ -192,4 +199,14 @@ body{
 .unfinished{
 	color: red;
 	z-index: 99;
+}
+/*兼容移动端*/
+@media screen and (max-width: 415px){
+	.er{
+		display: none;
+	}
+	.myalert,.myscore{
+		width: 300px;
+		margin-left: -150px;
+	}
 }
