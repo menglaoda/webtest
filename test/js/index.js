@@ -49,16 +49,20 @@ $(function(){
 		$(".myscore span").html(score);
 		$(".zhezhao").show();
 	}
+	//点击首页
+	$(".home").click(function(){
+		window.location.href = "index.html";
+	})
 	//给每个项目绑定事件
-	$(".myalert p").on("click",function(){
+	$(".mytest li").on("click",function(){
 		mytime=1800;
-		$(".myalert").hide();
+		$(".mytest").hide();
 		$(".loading").show();
 		timer = setInterval(function(){
 			time();
 		},1000)
-		$(".headTitle").html($(this).html());
-		if($(this).html()=="html+css测试"){
+		$(".headTitle").html($(this).text());
+		if($(this).index()=="0"){
 			$.ajax({
 				type:"get",
 				url:"js/htmlCss.json",
@@ -99,7 +103,7 @@ $(function(){
 								topic.appendTo($(".textbox"));
 							}
 						})
-					}5
+					}
 				},
 				complete:function(){
 					$(".loading").fadeOut();

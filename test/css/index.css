@@ -6,9 +6,6 @@ body{
 	font-size: 20px;
 	color: #333;
 	font-family: "宋体","bodoni mt";
-	/*background: url(../img/Nview.jpg) no-repeat fixed top center;
-	background-size: 100vw 100vh;*/
-	overflow: hidden;
 }
 .back{
 	position: fixed;
@@ -20,18 +17,49 @@ body{
 	background: url(../img/Nview.jpg) no-repeat top center;
 	background-size: 100vw 100vh;
 }
-/*
-body:before {
-  content: ' ';
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../img/Nview.jpg) center 0 no-repeat;
-  background-size: cover;
-}*/
+.header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background: #20344c;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+}
+.header img{
+	width: 20px;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+.mytest{
+	list-style: none;
+	padding: 0px 10px;
+	margin-top: 50px;
+	color: #333;
+}
+.mytest li{
+	width: 33%;
+	height: 130px;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+}
+.mytest img{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	animation: mytestImg 6s linear infinite;
+}
+@keyframes mytestImg{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
 .content{
 	width: 80%;
 	margin: 50px auto 50px;
@@ -115,37 +143,7 @@ body:before {
 	right: 0px;
 	background: #333;
 	opacity: 0.5;
-}
-.myalert{
-	width: 400px;
-	height: 200px;
-	background: white;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-left: -200px;
-	margin-top: -200px;
-	border-radius: 10px;
-	animation: wealert 2s;
-}
-@keyframes wealert{
-	from{margin-top: -500px;}
-	to{margin-top: -200px;}
-}
-.myalert h1{
-	font-size: 30px;
-	font-weight: 500px;
-	text-align: center;
-	margin: 10px 0px;
-}
-.myalert p{
-	color: #0000FF;
-	text-indent: 16px;
-	margin-bottom: 10px;	
-}
-.myalert p:hover{
-	text-decoration: underline;
-	cursor: pointer;
+	display: none;
 }
 .loading{
 	display: none;
@@ -185,9 +183,9 @@ body:before {
 	text-align: center;
 	line-height: 40px;
 	color: white;
-	background: #333;
+	background: #20344c;
 	position: fixed;
-	top: 0%;
+	bottom: 0%;
 	left: 0%;
 	display: none;
 }
@@ -200,13 +198,16 @@ body:before {
 	.er{
 		display: none;
 	}
-	.myalert{
-		width: 300px;
-		margin-left: -150px;
-	}
 	.myscore{
 		width: 70%;
 		margin-left: -10px;
 		left: 15%;
+	}
+	.back{
+		background:url(../img/b3.jpg) no-repeat top center;
+		background-size: 100vw 100vh;
+	}
+	.mytest{
+		color: #eae3e3;
 	}
 }
