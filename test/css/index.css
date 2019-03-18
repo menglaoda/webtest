@@ -28,6 +28,7 @@ body{
 	color: white;
 	font-weight: 900;
 	text-align: center;
+	z-index: 999;
 }
 .header img{
 	width: 20px;
@@ -168,6 +169,7 @@ body{
 	height: 180px;
 	background: white;
 	padding: 10px;
+	text-align: center;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -176,6 +178,14 @@ body{
 	border-radius: 10px;
 	animation: wealert 2s;
 	display: none;
+}
+.myscore img{
+	width: 100px;
+}
+.errtimu{
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
 }
 .bttitle,.unfinished,.myscore2{
 	width: 100%;
