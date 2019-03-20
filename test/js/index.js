@@ -47,6 +47,18 @@ $(function(){
 		$(".bttitle").hide();
 		$(".myscore").show();
 		$(".myscore span").html(score);
+		//判断成绩等级
+		if(score==60){
+			$(".myscore img").attr("src","img/hao.gif");
+		}else if(score<60&&score>=50){
+			$(".myscore img").attr("src","img/youxiu.gif");
+		}else if(score<50&&score>=40){
+			$(".myscore img").attr("src","img/jy.gif");
+		}else if(score<40&&score>=10){
+			$(".myscore img").attr("src","img/lingxin.gif");
+		}else if(score<10){
+			$(".myscore img").attr("src","img/xintong.gif");
+		}
 		$(".zhezhao").show();
 	}
 	//点击首页
