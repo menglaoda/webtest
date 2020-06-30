@@ -66,6 +66,7 @@ $(function(){
 		window.location.href = "index.html";
 	})
 	//给每个项目绑定事件
+	var arrjson = ["js/htmlCss.json","js/jsjq.json","js/html5css3.json","js/zh.json"];
 	$(".mytest li").on("click",function(){
 		mytime=1800;
 		$(".mytest").hide();
@@ -74,72 +75,73 @@ $(function(){
 			time();
 		},1000)
 		$(".headTitle").html($(this).text());
-		if($(this).index()=="0"){
-			$.ajax({
-				type:"get",
-				url:"js/htmlCss.json",
-				async:false,
-				success:function(res){
-					var num1 = num(res.length);//随机30道题目
-					for(var i=0;i<30;i++){
-						$(res).each(function(idx,item){							
-							if(num1[i]==idx){
-								answer[i] = item.answer;
-								var topic = $("<div class='topic'></div>");
-								var timu = $("<p class='timu'></p>");
-								timu.html((i+1)+"."+item.title).appendTo(topic);
-								var ol = $("<ol class='xuanze'></ol>");
-								$(item.choose).each(function(idx2,item2){
-									var s = 'A';
-									if(idx2==0){
-										s= 'A';
-									}else if(idx2==1){
-										s='B';
-									}else if(idx2==2){
-										s='C';
-									}else if(idx2==3){
-										s='D';
-									}
-									var li1 = $("<li></li>");
-									var input1 = $("<input type='radio' />");
-									var label1 = $("<label></label>");
-									input1.attr({"name":idx,"id":"like"+i+""+idx2}).appendTo(li1);
-									label1.attr("for","like"+i+""+idx2).html('&ensp;'+s+"&ensp;"+item2).appendTo(li1);
-									li1.appendTo(ol);
-								});
-								ol.appendTo(topic);
-								var hr = $("<hr />");
-								hr.appendTo(topic);
-								var pp = $("<p class='bixuan'>请选择选项</p>");
-								pp.appendTo(topic);
-								topic.appendTo($(".textbox"));
-							}
-						})
-					}
-				},
-				complete:function(){
-					$(".loading").fadeOut();
-					$(".zhezhao").hide();
-					$(".content").fadeIn();
-					$("body").css("overflow","visible");
-					//点击选项把答案记录在topic上
-					$(".topic input").on("click",function(){
-						if($(this).parent().index()==0){
-							n="A";
-						}else if($(this).parent().index()==1){
-							n="B";
-						}else if($(this).parent().index()==2){
-							n="C";
-						}else if($(this).parent().index()==3){
-							n="D";
+		var that = $(this);
+		console.log(arrjson[that.index()]);
+		$.ajax({
+			type:"get",
+			url:arrjson[that.index()],
+			async:false,
+			success:function(res){
+				var num1 = num(res.length);//随机30道题目
+				for(var i=0;i<30;i++){
+					$(res).each(function(idx,item){							
+						if(num1[i]==idx){
+							answer[i] = item.answer;
+							var topic = $("<div class='topic'></div>");
+							var timu = $("<p class='timu'></p>");
+							timu.html((i+1)+"."+item.title).appendTo(topic);
+							var ol = $("<ol class='xuanze'></ol>");
+							$(item.choose).each(function(idx2,item2){
+								var s = 'A';
+								if(idx2==0){
+									s= 'A';
+								}else if(idx2==1){
+									s='B';
+								}else if(idx2==2){
+									s='C';
+								}else if(idx2==3){
+									s='D';
+								}
+								var li1 = $("<li></li>");
+								var input1 = $("<input type='radio' />");
+								var label1 = $("<label></label>");
+								input1.attr({"name":idx,"id":"like"+i+""+idx2}).appendTo(li1);
+								label1.attr("for","like"+i+""+idx2).html('&ensp;'+s+"&ensp;"+item2).appendTo(li1);
+								li1.appendTo(ol);
+							});
+							ol.appendTo(topic);
+							var hr = $("<hr />");
+							hr.appendTo(topic);
+							var pp = $("<p class='bixuan'>请选择选项</p>");
+							pp.appendTo(topic);
+							topic.appendTo($(".textbox"));
 						}
-						$(this).parents(".topic").css("border","solid 1px white").attr("name",n);
-						$(this).parents("ol").siblings("hr").hide();
-						$(this).parents("ol").siblings(".bixuan").hide();
 					})
 				}
-			});
-		}
+			},
+			complete:function(){
+				$(".loading").fadeOut();
+				$(".zhezhao").hide();
+				$(".content").fadeIn();
+				console.log(111)
+				$("body").css("overflow","visible");
+				//点击选项把答案记录在topic上
+				$(".topic input").on("click",function(){
+					if($(this).parent().index()==0){
+						n="A";
+					}else if($(this).parent().index()==1){
+						n="B";
+					}else if($(this).parent().index()==2){
+						n="C";
+					}else if($(this).parent().index()==3){
+						n="D";
+					}
+					$(this).parents(".topic").css("border","solid 1px white").attr("name",n);
+					$(this).parents("ol").siblings("hr").hide();
+					$(this).parents("ol").siblings(".bixuan").hide();
+				})
+			}
+		});	
 	})
 	//点击提交按钮
 	$("#btn").click(function(){

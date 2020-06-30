@@ -1,0 +1,227 @@
+[
+	{
+		"title":"HTML 指的是？",
+		"choose":["超文本标记语言（Hyper Text Markup Language）","家庭工具标记语言（Home Tool Markup Language）","超链接和文本标记语言（Hyperlinks and Text Markup Language）"],
+		"answer":"A"
+	},
+	{
+		"title":"Web 标准的制定者是？",
+		"choose":["微软（Microsoft）","万维网联盟（W3C）","网景公司（Netscape）"],
+		"answer":"B"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个是最大的标题？",
+		"choose":["&lt;h6&gt;","&lt;head&gt;","&lt;heading&gt;","&lt;h1&gt;"],
+		"answer":"D"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以添加背景颜色？",
+		"choose":["&lt;body color='yellow'&gt;","&lt;background&gt;yellow&lt;/background&gt;","&lt;body bgcolor='yellow'&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"请选择产生粗体字的 HTML 标签：",
+		"choose":["&lt;bold&gt;","&lt;bb&gt;","&lt;b&gt;","&lt;bld&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生超链接？",
+		"choose":["&lt;a url='https://www.baidu.com'&gt;百度&lt;/a&gt;","&lt;a href='https://www.baidu.com'&gt;百度&lt;/a&gt;","&lt;a&gt;https://www.baidu.com&lt;/a&gt;","&lt;a name='https://www.baidu.com'&gt;百度&lt;/a&gt;"],
+		"answer":"B"
+	},
+	{
+		"title":"如何在新窗口打开链接？",
+		"choose":["&lt;a href='url' new&gt;","&lt;a href='url' target='_blank'&gt;","&lt;a href='url' target='new'&gt;"],
+		"answer":"B"
+	},
+	{
+		"title":"以下选项中，哪个全部都是表格标签？",
+		"choose":["&lt;table&gt;&lt;head&gt;&lt;tfoot&gt;","&lt;table&gt;&lt;tr&gt;&lt;td&gt;","&lt;table&gt;&lt;tr&gt;&lt;tt&gt;","&lt;thead&gt;&lt;body&gt;&lt;tr&gt;"],
+		"answer":"B"
+	},
+	{
+		"title":"请选择可以使单元格中的内容进行左对齐的正确 HTML 标签：",
+		"choose":["&lt;td align='left'&gt;","&lt;td valign='left'&gt;","&lt;td leftalign&gt;","&lt;tdleft&gt;"],
+		"answer":"A"
+	},
+	{
+		"title":"如何产生带有数字列表符号的列表？",
+		"choose":["&lt;ul&gt;","&lt;dl&gt;","&lt;ol&gt;","&lt;list&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生复选框？",
+		"choose":["&lt;input type='textfield'&gt;","&lt;textinput type='text'&gt;","&lt;input type='checkbox'&gt;","&lt;textfield&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生下拉列表？",
+		"choose":["&lt;list&gt;","&lt;input type='list'&gt;","&lt;input type='dropdown'&gt;","&lt;select&gt;"],
+		"answer":"D"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以产生文本域（textarea）？",
+		"choose":["&lt;textarea&gt;","&lt;input type='textarea'&gt;","&lt;input type='textbox'&gt;"],
+		"answer":"A"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以插入图像？",
+		"choose":["&lt;img href='image.gif'&gt;","&lt;image src='image.gif'&gt;","&lt;img src='image.gif'&gt;","&lt;img&gt;image.gif&lt;/img&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以插入背景图像？",
+		"choose":["&lt;body background='background.gif'&gt;","&lt;background img='background.gif'&gt;","&lt;img src='background.gif' background&gt;"],
+		"answer":"A"
+	},
+	{
+		"title":"CSS 指的是？",
+		"choose":["Computer Style Sheets","Cascading Style Sheets","Creative Style Sheets","Colorful Style Sheets？"],
+		"answer":"B"
+	},
+	{
+		"title":"在以下的 HTML 中，哪个是正确引用外部样式表的方法？",
+		"choose":["&lt;style src='mystyle.css'&gt;","&lt;link rel='stylesheet' type='text/css' href='mystyle.css'&gt;","&lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;"],
+		"answer":"B"
+	},
+	{
+		"title":"在 HTML 文档中，引用外部样式表的正确位置是？",
+		"choose":["文档的末尾","文档的顶部","&lt;body&gt; 部分","&lt;head&gt; 部分"],
+		"answer":"D"
+	},
+	{
+		"title":"哪个 HTML 标签用于定义内部样式表？",
+		"choose":["&lt;style&gt;","&lt;script&gt;","&lt;css&gt;"],
+		"answer":"A"
+	},
+	{
+		"title":"哪个 HTML 属性可用来定义内联样式？",
+		"choose":["font","class","styles","style"],
+		"answer":"D"
+	},
+	{
+		"title":"下列哪个选项的 CSS 语法是正确的？",
+		"choose":["body:color=black","{body:color=black(body}","body {color: black}","{body;color:black}"],
+		"answer":"C"
+	},
+	{
+		"title":"如何在 CSS 文件中插入注释？",
+		"choose":["// this is a comment","// this is a comment //","/* this is a comment */","' this is a comment"],
+		"answer":"C"
+	},
+	{
+		"title":"CSS中哪个属性可用于改变背景颜色？",
+		"choose":["bgcolor:","background-color:","color:"],
+		"answer":"B"
+	},
+	{
+		"title":"如何为所有的 &lt;h1&gt; 元素添加背景颜色？",
+		"choose":["h1.all {background-color:#FFFFFF}","h1 {background-color:#FFFFFF}","all.h1 {background-color:#FFFFFF}"],
+		"answer":"B"
+	},
+	{
+		"title":"如何改变某个元素的文本颜色？",
+		"choose":["text-color:","fgcolor:","color:","text-color="],
+		"answer":"C"
+	},
+	{
+		"title":"哪个 CSS 属性可控制文本的尺寸？",
+		"choose":["font-size","text-style","font-style","text-size"],
+		"answer":"A"
+	},
+	{
+		"title":"在以下的 CSS 中，可使所有 &lt;p&gt; 元素变为粗体的正确语法是？",
+		"choose":["&lt;p style='font-size:bold'&gt;","&lt;p style='text-size:bold'&gt;","p {font-weight:bold}","p {text-size:bold}"],
+		"answer":"C"
+	},
+	{
+		"title":"如何显示没有下划线的超链接？",
+		"choose":["a {text-decoration:none}","a {text-decoration:no underline}","a {underline:none}","a {decoration:no underline}"],
+		"answer":"A"
+	},
+	{
+		"title":"如何使文本以大写字母开头？",
+		"choose":["text-transform:capitalize","无法通过 CSS 来实现","text-transform:uppercase"],
+		"answer":"A"
+	},
+	{
+		"title":"如何改变元素的字体？",
+		"choose":["font=","f:","font-family:"],
+		"answer":"C"
+	},
+	{
+		"title":"如何使文本变为粗体？",
+		"choose":["font:b","font-weight:bold","style:bold"],
+		"answer":"B"
+	},
+	{
+		"title":"如何显示这样一个边框：上边框 10 像素、下边框 5 像素、左边框 20 像素、右边框 1 像素？",
+		"choose":["border-width:10px 5px 20px 1px","border-width:10px 20px 5px 1px","border-width:5px 20px 10px 1px","border-width:10px 1px 5px 20px"],
+		"answer":"D"
+	},
+	{
+		"title":"如何改变元素的左边距？",
+		"choose":["text-indent:","indent:","margin:","margin-left:"],
+		"answer":"D"
+	},
+	{
+		"title":"请判断以下说法是否正确：如需定义元素内容与边框间的空间，可使用 padding 属性，并可使用负值？",
+		"choose":["错误","正确"],
+		"answer":"A"
+	},
+	{
+		"title":"在下列的 HTML 中，哪个可以插入折行？",
+		"choose":["&lt;br&gt;","&lt;lb&gt;","&lt;break&gt;"],
+		"answer":"A"
+	},
+	{
+		"title":"如何制作电子邮件链接？",
+		"choose":["&lt;a href='xxx@yyy'&gt;","&lt;mail href='xxx@yyy'&gt;","&lt;a href='mailto:xxx@yyy'&gt;","&lt;mail&gt;xxx@yyy&lt;/mail&gt;"],
+		"answer":"C"
+	},
+	{
+		"title":"默认情况下，使用P标签会有啥效果？",
+		"choose":["在文字P所在位置中加入8个空格","P后面的文字会变成粗体","开始新的一行","P后面的文字会变成斜体"],
+		"answer":"C"
+	},
+	{
+		"title":"哪一个属性使HTML文档中表格里的单元格在同行进行合并？",
+		"choose":["cellspacing","cellpadding","rowspan","colspan"],
+		"answer":"D"
+	},
+	{
+		"title":"以下哪个不可以在HTML文档中使用的特殊字符。",
+		"choose":["& gt;","& tl;","& yen;","& nbsp;"],
+		"answer":"B"
+	},
+	{
+		"title":"html标签中，用什么方法可以将整个表格在页面中居中？",
+		"choose":["place=middle","type=middle","align=center","type=center"],
+		"answer":"C"
+	},
+	{
+		"title":"我们想要让表格的边框在页面中不显示出来，用什么方法可以做到呢？",
+		"choose":["bgcolor='white'","bgcolor='null'","border='0'","bordercolor='white'"],
+		"answer":"C"
+	},
+	{
+		"title":"下列的HTML中哪个可以插入一条水平线？",
+		"choose":["&lt;br&gt;","&lt;hr&gt;","&lt;p&gt;","&lt;break&gt;"],
+		"answer":"B"
+	},
+	{
+		"title":"下列哪种CSS样式定义的方式拥有最高的优先级？",
+		"choose":["行内样式","内部样式","外部样式","导入样式"],
+		"answer":"A"
+	},
+	{
+		"title":"关于class和id使用方法，正确的是",
+		"choose":["同一个元素可以使用多个class，但ID不行。","Class有缺省的浏览器参数，ID没有","ID有缺省的浏览器参数，class没有","同一个元素可以使用多个ID，但class不行。"],
+		"answer":"A"
+	},
+	{
+		"title":"在同一样式表中，以下优先级正确的是",
+		"choose":["!important &gt;  内部样式  &gt; 行内样式 &gt; 外部样式","!important &gt; 行内样式 &gt; 外部样式 &gt; 内部样式","行内样式 &gt; !important &gt; 外部样式 &gt; 内部样式","行内样式 &gt; !important &gt; 内部样式 &gt; 外部样式"],
+		"answer":"B"
+	}
+]
