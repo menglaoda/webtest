@@ -66,7 +66,7 @@ $(function(){
 		window.location.href = "index.html";
 	})
 	//给每个项目绑定事件
-	var arrjson = ["js/htmlCss.json","js/jsjq.json","js/html5css3.json","js/zh.json"];
+	var arrjson = ["js/htmlCss.json","js/js.json","js/html5css3.json","js/zh.json"];
 	$(".mytest li").on("click",function(){
 		mytime=1800;
 		$(".mytest").hide();
